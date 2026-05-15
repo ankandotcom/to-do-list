@@ -1,4 +1,4 @@
-# ⚡ Modern Minimalist To-Do
+# ⚡ Modern Minimalist To-Do App
 
 A high-performance, aesthetically pleasing To-Do application. Built with a focus on clean UI, fluid user experience, and modern CSS techniques.
 
