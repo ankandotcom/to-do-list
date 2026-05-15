@@ -23,7 +23,7 @@ A high-performance, aesthetically pleasing To-Do application. Built with a focus
 ## 📖 Quick Start
 ```bash
 # Clone the repo
-git clone [https://github.com/ankandotcom/to-do-list.git](https://github.com/ankandotcom/to-do-list.git)
+git clone https://github.com/ankandotcom/to-do-list.git
 
 # Open the project
 cd to-do-list
