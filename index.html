@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <!-- Add this to enable the background classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen w-full relative flex items-center justify-center font-['Poppins']">
+
+    <!-- THE BACKGROUND ELEMENT -->
+    <div
+        class="fixed inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+        <div
+            class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]">
+        </div>
+    </div>
+
+    <!-- TO DO CONTAINER -->
+    <div class="container w-[90%] max-w-[450px] bg-white p-8 rounded-xl shadow-2xl border border-slate-100">
+
+        <!-- ADDED TITLE HERE -->
+        <div class="mb-6 text-center">
+            <h1 class="text-3xl font-extrabold text-slate-800 tracking-tight">
+                To-Do <span class="text-blue-600">List</span>
+            </h1>
+            <p class="text-slate-400 text-sm mt-1">Stay organized and productive</p>
+        </div>
+
+        <!-- INPUT SECTION -->
+        <div id="newTask" class="flex gap-3 mb-6">
+            <input type="text" placeholder="Task to be done.."
+                class="flex-1 h-12 px-4 border-2 border-slate-200 rounded-lg outline-none focus:border-blue-500 transition-all text-slate-700 font-medium">
+
+            <button
+                class="w-1/4 h-12 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors shadow-md active:scale-95">
+                Add
+            </button>
+        </div>
+
+        <!-- TASKS LIST -->
+        <div id="tasks" class="space-y-3">
+            <!-- Example Task (This is what your JS should generate) -->
+
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
