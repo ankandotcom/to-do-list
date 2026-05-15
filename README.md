@@ -27,4 +27,5 @@ git clone https://github.com/ankandotcom/to-do-list.git
 
 # Open the project
 cd to-do-list
-open index.html
+open index.html (Mac/Linux)
+start index.html (Windows)
