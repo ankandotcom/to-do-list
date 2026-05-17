@@ -5,13 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do List</title>
-    <link rel="stylesheet" href="style.css" />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <!-- Add this to enable the background classes -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="min-h-screen w-full relative flex items-center justify-center font-['Poppins']">
+<body class="min-h-screen w-full flex flex-col items-center justify-start md:justify-center font-['Poppins'] py-10 px-4">
 
     <!-- THE BACKGROUND ELEMENT -->
     <div
@@ -22,10 +23,10 @@
     </div>
 
     <!-- TO DO CONTAINER -->
-    <div class="container w-[90%] max-w-[450px] bg-white p-8 rounded-xl shadow-2xl border border-slate-100">
+    <div class="container w-full max-w-[650px] bg-white p-8 rounded-xl shadow-2xl border border-slate-100">
 
         <!-- ADDED TITLE HERE -->
-        <div class="mb-6 text-center">
+        <div class="mb-8 text-center">
             <h1 class="text-3xl font-extrabold text-slate-800 tracking-tight">
                 To-Do <span class="text-blue-600">List</span>
             </h1>
@@ -33,7 +34,7 @@
         </div>
 
         <!-- INPUT SECTION -->
-        <div id="newTask" class="flex gap-3 mb-6">
+        <div id="newTask" class="flex gap-4 mb-3">
             <input type="text" placeholder="Task to be done.."
                 class="flex-1 h-12 px-4 border-2 border-slate-200 rounded-lg outline-none focus:border-blue-500 transition-all text-slate-700 font-medium">
 
@@ -43,11 +44,17 @@
             </button>
         </div>
 
-        <!-- TASKS LIST -->
-        <div id="tasks" class="space-y-3">
-            <!-- Example Task (This is what your JS should generate) -->
-
+        <!-- CLEAR ALL BUTTON CONTAINER -->
+        <div class="flex justify-end mb-4 pr-4">
+            <button id="clearAllBtn" class="hidden text-xs font-semibold text-red-500 hover:text-red-700 hover:underline transition-all bg-red-50 px-3 py-2 rounded-md border border-red-200 active:scale-95">
+                <i class="fa-solid fa-trash-can mr-1"></i> Clear All
+            </button>
         </div>
+
+        <!-- TASKS LIST -->
+        <ul id="tasks" class="task-list">
+            <!-- Example Task (This is what your JS should generate) -->
+        </ul>
 
     </div>
 

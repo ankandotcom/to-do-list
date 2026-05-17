@@ -5,106 +5,80 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
-    height: 100vh;
-    background: #066acd;
-}
-
-.container{
-    width: 40%;
-    min-width: 450px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    background: #fff;
-    border-radius: 10px;
-}
-
-#newTask{
-    position: relative;
-    padding: 30px 20px;
-}
-
-#newTask input{
-    width: 75%;
-    height: 45px;
-    font-size: 15px;
-    border: 2px solid #d1d3d4;
-    padding: 12px;
-    color: #111;
-    font-weight: 500;
-    position: relative;
-    border-radius: 5px;
-}
-
-#newTask input:focus{
-    outline: none;
-    border-color: #0d75ec;
-}
-
-#newTask button{
-    position: relative;
-    float: right;
-    width: 20%;
-    height: 45px;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 16px;
-    background: #0d75ec;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    outline: none;
-}
-
-#tasks{
-    background: #fff;
-    padding: 30px 20px;
-    margin-top: 10px;
-    border-radius: 10px;
+/* Let Tailwind completely handle the body layout and backgrounds */
+html, body {
+    margin: 0;
+    padding: 0;
     width: 100%;
+}
+
+/* Cleaned up: Removed hardcoded widths/margins so Tailwind can control them */
+.container {
+    background: #fff;
+}
+
+#newTask {
     position: relative;
 }
 
-.task{
-    background: #c5e1e6;
-    height: 50px;
-    margin-bottom: 8px;
-    padding: 5px 10px;
+#tasks {
+    background: #fff;
+    position: relative;
+    width: 100%;
+}
+
+/* KEEP THESE: For your dynamically generated JS tasks */
+.task-list {
+    margin-top: 10px;
+}
+
+.task-list li {
+    list-style: none;
+    background: #f8fafc; /* Clean slate background to match light theme */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin-top: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    color: #334155;
+    transition: all 0.2s ease;
+}
+
+.task-list li p {
+    word-break: break-all;
+    cursor: pointer;
+    user-select: none;
+    flex-grow: 1;
+    font-weight: 500;
+}
+
+.task-list li p.completed {
+    text-decoration: line-through;
+    color: #94a3b8;
+    opacity: 0.6;
+}
+
+
+.task-list li button {
+    background: #44ef8e;
+    color: #fff;
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border: 1px solid #939697;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.task span{
-    font-size: 15px;
-    font-weight: 400;
+    justify-content: center;
+    transition: background 0.2s;
 }
 
-.task button{
-    background: #0a2ea4;
-    color: #fff;
-    height: 100%;
-    width: 40px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    outline: none;
 
+/*
+.task-list li button:hover {
+    background: #dc2626;
 }
-
-.completed{
-    text-decoration: line-through;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
-  width: 100%;
-  /* This ensures the background doesn't get cut off if your list is long */
-  position: relative; 
-}
+*/    
