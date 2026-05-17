@@ -1,10 +1,9 @@
-# ⚡ Modern Minimalist To-Do
+# ⚡ Modern Minimalist To-Do App
 
 A high-performance, aesthetically pleasing To-Do application. Built with a focus on clean UI, fluid user experience, and modern CSS techniques.
 
 **[Live Demo Link →](https://to-do-list-jade-gamma.vercel.app/)**
-
----
+-
 
 ## 🚀 The Highlights
 *   **Sleek Aesthetic:** Features a "Blueprint" grid system with a soft-blur fuchsia glow.
@@ -27,4 +26,5 @@ git clone https://github.com/ankandotcom/to-do-list.git
 
 # Open the project
 cd to-do-list
-open index.html
+open index.html (Mac/Linux)
+start index.html (Windows)
